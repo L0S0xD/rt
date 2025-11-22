@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Rating</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="/">RealTop</a>
+      </h1>
+    </header>
+
+    <main>
+      <h2>Edit rating</h2>
+      <form action="/edit/{{ rating[0] }}" method="post">
+        <textarea
+          name="content"
+          rows="4"
+          cols="40"
+          placeholder="Write something..."
+        >{{ rating[1] }}</textarea><br />
+        <button type="submit" class="btn-update">Update</button>
+        <a href="/" class="btn-cancel">Cancel</a>
+      </form>
+    </main>
+  </body>
+</html>

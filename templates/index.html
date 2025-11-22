@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RealTop</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="/">RealTop</a>
+      </h1>
+      <navbar>
+        <a href = ""> TOP100 </a>
+        <a href = ""> NEW RELEASES </a>
+        <a href = ""> BROWSE </a>
+        <a href = ""> SEARCH </a>
+        <a href = ""> ADD </a>
+      </navbar>
+      <nav>
+        <a href="">login</a>
+      </nav>
+    </header>
+
+    <main>
+
+       <h2>Add a Rating</h2>
+      <form action="/add" method="post">
+        <p>Flow</p>
+        <input type="radio" id="flow1" name="flow" value="1">
+        <label for="flow1">1</label>
+        <input type="radio" id="flow2" name="flow" value="2">
+        <label for="flow2">2</label>
+        <input type="radio" id="flow3" name="flow" value="3">
+        <label for="flow3">3</label>
+        <input type="radio" id="flow3" name="flow" value="4">
+        <label for="flow3">4</label>
+        <input type="radio" id="flow3" name="flow" value="5">
+        <label for="flow3">5</label>
+        <input type="radio" id="flow3" name="flow" value="6">
+        <label for="flow3">6</label>
+        <input type="radio" id="flow3" name="flow" value="7">
+        <label for="flow3">7</label>
+        <input type="radio" id="flow3" name="flow" value="8">
+        <label for="flow3">8</label>
+        <input type="radio" id="flow3" name="flow" value="9">
+        <label for="flow3">9</label>
+        <input type="radio" id="flow3" name="flow" value="10">
+        <label for="flow3">10</label><br><br>
+        <p>Reason for Rating:</p>
+        <textarea
+          name="flow_reason"
+          rows="4"
+          cols="40"
+          placeholder="Write something..."
+        ></textarea
+        ><br />
+        <button type="submit">Save</button>
+      </form>
+
+      <h2>Ratings</h2>
+      {% if ratings %}
+      <ul>
+        {% for rating_key, content in ratings %}
+        <li>
+          <span>#{{ loop.index }}: {{ content }}</span>
+          <span>
+            <a href="/edit/{{ rating_key }}">Edit</a>
+            <form
+              action="/delete/{{ rating_key }}"
+              method="post"
+              style="display: inline"
+            >
+              <button
+                type="submit"
+                onclick="return confirm('Are you sure you want to delete this rating?')"
+              >
+                ×
+              </button>
+            </form>
+          </span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p style="color: #6b7280; font-style: italic">
+        No ratings yet. Click "Rate a Song" to add your first rating!
+      </p>
+      {% endif %}
+    </main>
+  </body>
+</html>
