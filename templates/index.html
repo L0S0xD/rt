@@ -25,8 +25,20 @@
 
     <main>
 
-       <h2>Add a Rating</h2>
+      <h2>Add a Rating</h2>
       <form action="/add" method="post">
+
+        <label for="type">Rating Type:</label>
+        <select name="type" id="type">
+          <option value="Artist">Artist</option>
+          <option value="Album">Album</option>
+          <option value="Song">Song</option>
+        </select>
+        <br><br>
+
+        <label for="rating_name">Artist or Album or Song Name:</label>
+        <input type="text" id="rating_name" name="rating_name"><br><br>
+
         <p>Flow</p>
         <input type="radio" id="flow1" name="flow" value="1">
         <label for="flow1">1</label>
@@ -56,6 +68,97 @@
           placeholder="Write something..."
         ></textarea
         ><br />
+
+        <p>Lyrics</p>
+        <input type="radio" id="lyrics1" name="lyrics" value="1">
+        <label for="lyrics1">1</label>
+        <input type="radio" id="lyrics2" name="lyrics" value="2">
+        <label for="lyrics2">2</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="3">
+        <label for="lyrics3">3</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="4">
+        <label for="lyrics3">4</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="5">
+        <label for="lyrics3">5</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="6">
+        <label for="lyrics3">6</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="7">
+        <label for="lyrics3">7</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="8">
+        <label for="lyrics3">8</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="9">
+        <label for="lyrics3">9</label>
+        <input type="radio" id="lyrics3" name="lyrics" value="10">
+        <label for="lyrics3">10</label><br><br>
+        <p>Reason for Rating:</p>
+        <textarea
+          name="lyrics_reason"
+          rows="4"
+          cols="40"
+          placeholder="Write something..."
+        ></textarea
+        ><br />
+
+        <p>melody</p>
+        <input type="radio" id="melody1" name="melody" value="1">
+        <label for="melody1">1</label>
+        <input type="radio" id="melody2" name="melody" value="2">
+        <label for="melody2">2</label>
+        <input type="radio" id="melody3" name="melody" value="3">
+        <label for="melody3">3</label>
+        <input type="radio" id="melody3" name="melody" value="4">
+        <label for="melody3">4</label>
+        <input type="radio" id="melody3" name="melody" value="5">
+        <label for="melody3">5</label>
+        <input type="radio" id="melody3" name="melody" value="6">
+        <label for="melody3">6</label>
+        <input type="radio" id="melody3" name="melody" value="7">
+        <label for="melody3">7</label>
+        <input type="radio" id="melody3" name="melody" value="8">
+        <label for="melody3">8</label>
+        <input type="radio" id="melody3" name="melody" value="9">
+        <label for="melody3">9</label>
+        <input type="radio" id="melody3" name="melody" value="10">
+        <label for="melody3">10</label><br><br>
+        <p>Reason for Rating:</p>
+        <textarea
+          name="melody_reason"
+          rows="4"
+          cols="40"
+          placeholder="Write something..."
+        ></textarea
+        ><br />
+
+        <p>cohesive</p>
+        <input type="radio" id="cohesive1" name="cohesive" value="1">
+        <label for="cohesive1">1</label>
+        <input type="radio" id="cohesive2" name="cohesive" value="2">
+        <label for="cohesive2">2</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="3">
+        <label for="cohesive3">3</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="4">
+        <label for="cohesive3">4</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="5">
+        <label for="cohesive3">5</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="6">
+        <label for="cohesive3">6</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="7">
+        <label for="cohesive3">7</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="8">
+        <label for="cohesive3">8</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="9">
+        <label for="cohesive3">9</label>
+        <input type="radio" id="cohesive3" name="cohesive" value="10">
+        <label for="cohesive3">10</label><br><br>
+        <p>Reason for Rating:</p>
+        <textarea
+          name="cohesive_reason"
+          rows="4"
+          cols="40"
+          placeholder="Write something..."
+        ></textarea
+        ><br />
+        <br />
         <button type="submit">Save</button>
       </form>
 
