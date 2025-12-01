@@ -16,31 +16,26 @@
 }
 
 .main_box{
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
 .box_left{
   float: left;
-  width: 23%;
-  margin: 2.5%;
-  padding: 2.5%;
+  padding: 5%;
   background-color: #2d3748;
 }
 
 .box_middle{
   float: left;
-  width: 23%;
-  margin: 2.5%;
-  padding: 2.5%;
+  padding: 5%;
   background-color: #2d3748;
 }
 
 .box_right{
   float: left;
-  width: 23%;
-  margin: 2.5%;
-  padding: 2.5%;
+  padding: 5%;
   background-color: #2d3748;
 }
 

@@ -19,10 +19,11 @@ def init_db():
         """
        CREATE TABLE IF NOT EXISTS "ratings" (
         rating_key INTEGER PRIMARY KEY AUTOINCREMENT,
-        id INTEGER,
-        content VARCHAR(50),
         rating_type VARCHAR(50),
-        rating_name VARCHAR(50), 
+        rating_name VARCHAR(50),
+        content_id INTEGER,
+        content_info_artist VARCHAR(50),
+        content_info_album VARCHAR(50), 
         lyrics_rating INTEGER,
         lyrics_reason  VARCHAR(500),
         beat_rating INTEGER,
