@@ -1,3 +1,5 @@
+
+
 .rating-alt {
   max-width: 900px;
   margin: 0 auto;
@@ -15,28 +17,55 @@
   font-size: 1.6rem;
 }
 
-.main_box{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+.box{
+ background: #000000;
+ background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
+ margin-bottom: 8px;
+ width: 100%;
+ margin-top: 2%;
 }
 
-.box_left{
-  float: left;
-  padding: 5%;
-  background-color: #2d3748;
+a{
+  text-decoration: none;
+  color: #fff;
+
 }
 
-.box_middle{
-  float: left;
-  padding: 5%;
-  background-color: #2d3748;
+.box_content{
+  width: 96%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  row-gap: 2%;
+  padding: 1%;
+  margin: 1%;
 }
 
-.box_right{
-  float: left;
-  padding: 5%;
-  background-color: #2d3748;
+.thumbnail{
+width: 85%;
+height: 90%;
+background: #000000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
+display: flex;
+justify-content: left;
+font-size: 1vw;
+padding: 2%;
+border: #000000 .2vw solid;
+}
+
+.data{
+  padding-left: 3%;
+}
+
+.box_heading{
+  font-size: 2.5vw;
+  font-weight: bold;
+  background: #000000;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(34, 34, 34, 1) 100%); */
+}
+
+.bottom_box{
+  float: right;
 }
 
 .summary-pills {
@@ -108,12 +137,14 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
-  background: #101010;
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(34, 34, 34, 1) 100%);
   color: #f5f5f5;
 }
 
 header {
-  background: #202020;
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
   padding: 1rem 2rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -135,8 +166,7 @@ navbar {
 }
 
 navbar span {
-  color: #6b7280;
-  font-size: 0.95rem;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);  font-size: 0.95rem;
 }
 
 header h1 a {
@@ -274,7 +304,7 @@ main {
 textarea {
   width: 100%;
   max-width: 400px;
-  background: #202020;
+  background: #414040;
   color: #f5f5f5;
   border: 1px solid #374151;
   padding: 0.5rem 0.75rem;
@@ -298,7 +328,7 @@ textarea:focus {
 select,
 input[type='text'],
 input[type='email'] {
-  background: #202020;
+  background: #414040;
   color: #f5f5f5;
   border: 1px solid #374151;
   padding: 0.5rem 0.45rem;
@@ -329,7 +359,7 @@ input[type='email']:focus {
 input[type='text'],
 input[type='email'] {
   cursor: text;
-  background: #202020 !important;
+  background: #414040 !important;
   color: #f5f5f5 !important;
   -webkit-text-fill-color: #f5f5f5;
 }
@@ -342,7 +372,7 @@ input[type='email']:-webkit-autofill,
 input[type='email']:-webkit-autofill:hover,
 input[type='email']:-webkit-autofill:focus,
 input[type='email']:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #202020 inset !important;
+  -webkit-box-shadow: 0 0 0 30px #414040 inset !important;
   -webkit-text-fill-color: #f5f5f5 !important;
 }
 
@@ -595,7 +625,7 @@ li {
 }
 
 li:hover {
-  background: #202020;
+  background: #414040;
 }
 
 .owner-badge {
@@ -736,7 +766,7 @@ li:hover {
   max-width: 400px;
   margin: 3rem auto;
   padding: 2rem;
-  background: #202020;
+  background: #414040;
   border-radius: 12px;
   border: 1px solid #2d3748;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);

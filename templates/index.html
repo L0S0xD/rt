@@ -8,20 +8,9 @@
 
   <body>
     <header>
-      <h1>
+      <p>
         <a href="/">RealTop</a>
-      </h1>
-      <navbar>
-        <a href="">TOP100</a>
-        <span>•</span>
-        <a href="">NEW RELEASES</a>
-        <span>•</span>
-        <a href="/browse">BROWSE</a>
-        <span>•</span>
-        <a href="">SEARCH</a>
-        <span>•</span>
-        <a href="/add">ADD</a>
-      </navbar>
+      <p>
       <nav>
         {% if current_user.is_authenticated %} {% if current_user.profile_pic %}
         <img class="avatar" src="{{ current_user.profile_pic }}" alt="Avatar" />
@@ -39,18 +28,374 @@
     </header>
 
     <main>
-      <div class="main_box">
-        <div class="box_left">
-          <h3>Top100 for the Week:</h3>
+
+      <navbar>
+        <a href="">TOP100</a>
+        <span>•</span>
+        <a href="">NEW RELEASES</a>
+        <span>•</span>
+        <a href="/browse">BROWSE</a>
+        <span>•</span>
+        <a href="">SEARCH</a>
+        <span>•</span>
+        <a href="/add">ADD</a>
+      </navbar>
+
+      <div class="box">
+        <div class="box_heading">
+          TOP100
         </div>
-        <div class="box_middle">
-          <h3>Top100 New Releases:</h3>
+        <div class="box_content">
+          <a href="/view">
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          </a>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="bottom_box">
+          <h3>view all ></h3>
+          </div>
         </div>
-        <div class="box_right">
-          <h3>Top100 throwbacks:</h3>
+      </div>  
+
+
+      <div class="box">
+        <div class="box_heading">
+          NEW RELEASES
         </div>
-        
-      </div>
+        <div class="box_content">
+          <a href="/view">
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          </a>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="bottom_box">
+          <h3>view all ></h3>
+          </div>
+        </div>
+      </div>  
+
+
+      
+      <div class="box">
+        <div class="box_heading">
+          TOP100
+        </div>
+        <div class="box_content">
+          <a href="/view">
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          </a>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="thumbnail">
+              <img src="{{ url_for('static', filename='ph.JPG') }}" alt="Image" width="75%" height="100%">
+              <div class="data">
+                <b>Artist:</b> Donald Duck
+                <br/>
+                <b>Album:</b>  Donlad Duck single
+                <br/>
+                <b>Song:</b>  Donald Duck
+                <br/>
+                <h3>rating: 80%</h3>
+                view >
+              </div>
+          </div>
+          <div class="bottom_box">
+          <h3>view all ></h3>
+          </div>
+        </div>
+      </div>  
+
+
     </main>
   </body>
 </html>
