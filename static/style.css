@@ -173,6 +173,7 @@ navbar {
   align-items: center;
   font-weight: bolder;
   background: #313131;
+  padding: .1vw;
   background: linear-gradient(180deg, rgba(49, 49, 49, 1) 45%, rgba(0, 0, 0, 1) 100%);border-radius: 15px;
   display: flex;
   border: 1px solid #000000;
