@@ -143,20 +143,17 @@ header {
   background: #80F7FF;
   background: linear-gradient(180deg,rgba(128, 247, 255, 1) 43%, rgba(34, 193, 195, 1) 100%);
   padding: 1rem 2rem;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto;
+  display: flex;
   color: #000000;
   width: 100%;
   border-bottom: .2vw solid #000 ;
-  gap: 22vw;
   font-weight: bolder;
   font-size: 1.5vw;
 }
 
 navbar {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   justify-content: left;
   gap: .8vw;
   transform: translateX(24px);
@@ -177,7 +174,6 @@ navbar {
   font-weight: bolder;
   background: #313131;
   background: linear-gradient(180deg, rgba(49, 49, 49, 1) 45%, rgba(0, 0, 0, 1) 100%);border-radius: 15px;
-  padding: .1vw 1vw;
   display: flex;
   border: 1px solid #000000;
   }
