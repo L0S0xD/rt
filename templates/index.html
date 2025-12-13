@@ -11,9 +11,21 @@
       <p>
         <a href="/">REALTOP</a>
       </p>
-      <p>
-      REAL PEOPLE. REAL RATINGS. REAL CHARTS.
-      </p>
+      <navbar>
+        <a href="" class="btn-nav">HOME</a>
+        <a href="" class="btn-nav">BROWSE</a>
+        <a href="/browse" class="btn-nav">INVITE</a>
+        <a href="" class="btn-nav">FAVORITES</a>
+        <a href="/add" class="btn-nav">CHARTS</a>
+        <a href="" class="btn-nav">GENRES</a>
+        <a href="/add" class="btn-nav">PLAYLIST</a>
+        <a href="" class="btn-nav">NEW</a>
+        <a href="/add" class="btn-nav">TRENDING</a>
+      </navbar>
+    </header>
+
+    <main>
+
       <p>
         {% if current_user.is_authenticated %} {% if current_user.profile_pic %}
         <img class="avatar" src="{{ current_user.profile_pic }}" alt="Avatar" />
@@ -28,29 +40,6 @@
         <a href="/auth">SIGNUP/LOGIN</a>
         {% endif %}
       </p>
-    </header>
-
-    <main>
-
-      <navbar>
-        <a href="" class="btn-nav">HOME</a>
-        <a href="" class="btn-nav">BROWSE</a>
-        <a href="/browse" class="btn-nav">INVITE</a>
-        <a href="" class="btn-nav">FAVORITES</a>
-        <a href="/add" class="btn-nav">CHARTS</a>
-        <a href="" class="btn-nav">GENRES</a>
-        <a href="/add" class="btn-nav">PLAYLIST</a>
-        <a href="" class="btn-nav">NEW</a>
-        <a href="/add" class="btn-nav">TRENDING</a>
-        <input
-          type="text"
-          id="search"
-          name="search"
-          class="search_bar"
-        />
-        <a href="/add" class="btn-nav">SEARCH</a>
-      </navbar>
-
     </main>
   </body>
 </html>

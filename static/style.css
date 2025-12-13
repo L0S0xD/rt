@@ -171,13 +171,13 @@ navbar {
 .btn-nav {
   color: #f5f5f5 !important;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 1vw;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
   background: #313131;
   background: linear-gradient(180deg, rgba(49, 49, 49, 1) 45%, rgba(0, 0, 0, 1) 100%);border-radius: 15px;
-  padding: 0rem 2rem;
+  padding: .1vw 1vw;
   display: flex;
   border: 1px solid #000000;
   }
